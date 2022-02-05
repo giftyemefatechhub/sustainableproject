@@ -40,7 +40,7 @@ If you need assistance there is a video here.
 The terminal
 ------------------------
 
-Get acquainted with your **terminal** and learn how to use it and navigate through it.
+Get acquainted with your **terminal** and learn how to use it and navigate through it. The terminal is here a Unix like terminal running bash or zsh.
 
 * Windows - git bash (cygwin and WSL are alternatives)
 * MacOS - terminal (bash or zsh)
@@ -48,9 +48,9 @@ Get acquainted with your **terminal** and learn how to use it and navigate throu
 
 If you need assistance there is a video here.
 
-* [Install Git from the installation program on Windows 10 and configure it](https://www.youtube.com/watch?v=02u7ao7uK5k&list=PLEtyhUSKTK3iTFcdLANJq0TkKo246XAlv&index=1)
+* [Use various bash terminals on Windows (Git Bash, Cygwin, Debian/WSL2)](https://www.youtube.com/watch?v=kialYZs6Oyc&list=PLEtyhUSKTK3gHj087mUjPfXyqMvSy2Rwz&index=2)
 
-**NOTE** You could also setup a development environment using the Windows terminals cmd and powershell. However, they have different syntax than a bash terminal and to make the it easy and straightforward it is expected that you are working with a bash terminal.
+**NOTE** You could also setup a development environment using the Windows terminals cmd and powershell (or using GUI tools). However, they have different syntax than a bash terminal and to make the it easy and straightforward it is expected that you are working with a bash terminal.
 
 
 
@@ -66,37 +66,54 @@ $ python3 --version
 Python 3.7.3
 ```
 
+If you need assistance there is a video here.
 
-
+* [Install python on Windows and run in cmd terminal and in git bash terminal](https://www.youtube.com/watch?v=PeM9UxEGH0o&list=PLEtyhUSKTK3hOCnMrPKGOu3_VjUAkhsgG&index=2)
 
 
 
 GitLab or GitHub
 ------------------------
 
-You may add your project to a private instance of GitLab or GitHub or equal Git web service.
+You may add your projects to a private instance of [GitLab](https://gitlab.com/) or [GitHub](https://github.com/) or equal Git web service.
 
 You should learn to use these services as they or similar will most likely be part of your everyday work environment.
+
+If you do not know which to choose, then get started with GitHub and create an account there.
 
 
 
 Make and Makefiles
 ------------------------
 
-_This is an optional install and you can live without it._
+The Make command and the Makefiles are in general used to compile, build and run programs and tasks.
 
-If you have not yet heard about Makefiles, please read the short [introduction to Makefiles](https://www.gnu.org/software/make/manual/html_node/Introduction.html).
+If you have not yet heard about Makefiles, then read the short [introduction to Makefiles](https://www.gnu.org/software/make/manual/html_node/Introduction.html).
 
-Makefiles are in general used to compile, build and run programs and tasks.
+Ensure that you have it installed in your terminal.
 
 You can check your current version like this.
 
 ```
 $ make --version
-GNU Make 4.2.1
+GNU Make 4.3
 ```
 
-If you are a Windows user you might want to check out this post about how to [install make on Windows](https://stackoverflow.com/a/32127632). The Windows package manager `chocolatey` might be the way to go, if you are on a Windows terminal.
+
+
+### Install make on Windows
+
+If you are using Git Bash on Windows, then check out this post about how to [install make on Windows](https://stackoverflow.com/a/32127632). The Windows package manager `chocolatey` is one way to do this. You will then install the make command within Windows and it can then be used from Git Bash.
+
+1. [Install the Windows packet manager Chocolatey](https://chocolatey.org/install).
+1. [Install GNU make](https://community.chocolatey.org/packages/make) using `choco install make` using PowerShell (you might need to run the terminal as admin).
+1. Open a new window for Git Bash and check that it works be checking what version you have using `make --version`.
+
+
+<!--
+Make video
+-->
+
 
 
 <!--
@@ -119,7 +136,9 @@ Get a **web browser**, or three. It is useful to test out your website in differ
 Texteditor/IDE
 ------------------------
 
-Install a texteditor or IDE of your choice. [Atom](https://atom.io/) and [Visual Studio Code](https://code.visualstudio.com/) and both good choices as a plain texteditor with plugin capabilities. Ensure you are using the following setup through out the course:
+Install a texteditor or IDE of your choice. The texteditors and development environments [Atom](https://atom.io/) and [Visual Studio Code](https://code.visualstudio.com/) are both good choices as a plain texteditor with plugin capabilities.
+
+No matter what editor you choose, ensure you are using the following setup through out the course:
 
 * File format UTF-8 NOBOM
 * Unix style line endings LF `\n`
@@ -153,3 +172,9 @@ git clone https://gitlab.com/mikael-roos/oopython.git
 ```
 
 You can visit the [same repo online](https://gitlab.com/mikael-roos/oopython).
+
+
+
+### Learn some Unix commands
+
+It woyuld be useful to learn your way around the Unix terminal. There is an helpful online resource "[Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php)" that can be useful for that purpose.
