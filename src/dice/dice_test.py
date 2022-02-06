@@ -7,7 +7,7 @@ import unittest
 import dice
 
 
-class TestDiceClass(unittest.TestCase):
+class TestDiceClass(unittest.TestCase):  # noqa: H601
     """Test the class."""
 
     def test_init_default_object(self):

@@ -1,13 +1,28 @@
 #!/usr/bin/env make
 
 # Change this to be your variant of the python command
-#PYTHON = python3
-PYTHON = python
-#PYTHON = py
+PYTHON ?= python # python3 py
 
-.PHONY: pydoc
+# Print out colored action message
+MESSAGE = printf "\033[32;01m---> $(1)\033[0m\n"
+
+# To make targets in each directory under the src/
+define FOREACH
+    for DIR in src/*; do \
+        $(MAKE) -C $$DIR $(1); \
+    done
+endef
 
 all:
+
+
+# ---------------------------------------------------------
+# Setup a venv and install packages.
+#
+version:
+	@printf "Currently using executable: $(PYTHON)\n"
+	which $(PYTHON)
+	$(PYTHON) --version
 
 venv:
 	[ -d .venv ] || $(PYTHON) -m venv .venv
@@ -24,6 +39,10 @@ install:
 installed:
 	$(PYTHON) -m pip list
 
+
+# ---------------------------------------------------------
+# Cleanup generated and installed files.
+#
 clean:
 	rm -f .coverage *.pyc
 	rm -rf __pycache__
@@ -32,57 +51,23 @@ clean:
 clean-doc:
 	rm -rf doc
 
-clean-all: clean clean-doc
+clean-src:
+	$(call FOREACH,clean)
+
+clean-all: clean clean-doc clean-src
 	rm -rf .venv
 
-unittest:
-	 $(PYTHON) -m unittest discover . "*_test.py"
 
-coverage:
-	coverage run -m unittest discover . "*_test.py"
-	coverage html
-	coverage report -m
-
+# ---------------------------------------------------------
+# Test all the code at once.
+#
 pylint:
-	pylint *.py
+	$(call FOREACH,pylint)
 
 flake8:
-	flake8
-
-pydoc:
-	install -d doc/pydoc
-	$(PYTHON) -m pydoc -w "$(PWD)"
-	mv *.html doc/pydoc
-
-pdoc:
-	rm -rf doc/pdoc
-	pdoc --html -o doc/pdoc .
-
-doc: pdoc pyreverse #pydoc sphinx
-
-pyreverse:
-	install -d doc/pyreverse
-	pyreverse *.py
-	dot -Tpng classes.dot -o doc/pyreverse/classes.png
-	dot -Tpng packages.dot -o doc/pyreverse/packages.png
-	rm -f classes.dot packages.dot
-	ls -l doc/pyreverse
-
-radon-cc:
-	radon cc --show-complexity --average .
-
-radon-mi:
-	radon mi --show .
-
-radon-raw:
-	radon raw .
-
-radon-hal:
-	radon hal .
-
-bandit:
-	bandit --recursive .
+	$(call FOREACH,flake8)
 
 lint: flake8 pylint
 
-test: lint coverage
+test:
+	$(call FOREACH,test)

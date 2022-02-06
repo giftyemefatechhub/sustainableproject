@@ -34,7 +34,8 @@ class Shell(cmd.Cmd):
 
     def do_cheat(self, _):
         """Cheat to view the secret number."""
-        print("Cheater... the number is {}.".format(self.game.cheat()))
+        number = self.game.cheat()
+        print(f"Cheater... the number is {number}.")
 
     def do_guess(self, arg):
         """Do a guess of a number."""
@@ -47,7 +48,8 @@ class Shell(cmd.Cmd):
 
         a_number = int(arg)
         try:
-            print("Your'e guess is -> {}".format(self.game.guess(a_number)))
+            guess = self.game.guess(a_number)
+            print(f"Your'e guess is -> {guess}")
         except ValueError as error:
             print(error)
 

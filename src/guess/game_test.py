@@ -7,7 +7,7 @@ import unittest
 import game
 
 
-class TestGameClass(unittest.TestCase):
+class TestGameClass(unittest.TestCase):  # noqa: H601
     """Test the class."""
 
     def test_init_default_object(self):
