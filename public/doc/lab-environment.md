@@ -10,6 +10,8 @@ There are a lot of alternate development environments that likely will work for 
 * Terminal (bash or zsh)
 * Make
 
+[[_TOC_]]
+
 
 
 Computer and operating system
@@ -177,4 +179,24 @@ You can visit the [same repo online](https://gitlab.com/mikael-roos/oopython).
 
 ### Learn some Unix commands
 
-It woyuld be useful to learn your way around the Unix terminal. There is an helpful online resource "[Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php)" that can be useful for that purpose.
+Here are a few useful Unix commands when you try to learn your way around the terminal.
+
+Here are som commands that are useful in a Unix terminal.
+
+| Command | What
+|---------|------
+| `ls` | Show all files and directories in the current directory.
+| `ls -l` | Show additional details on the files and directories.
+| `ls -a` | Show even the hidden files, those starting with a dot `.`.
+| `ls -la` | Do it all.
+| `mkdir somedir` | Create a new directory named `somedir`.
+| `cd somedir` | Change to a sub directory named `somedir`, the directory must exist.
+| `cd ..` | Change one directory up in the directory hierarchy.
+| `cd` | Change directory to your home directory.
+| `pwd` | Show the current working directory.
+| `touch file.txt` | Create a new file named `file.txt`
+| `cat file.txt` | Show the content of the file.
+| `more file.txt` | Show the content of the file and paginate its output.
+| `rm file.txt` | Remove the file.
+
+There is an helpful online resource "[Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php)" that can be useful to follow.

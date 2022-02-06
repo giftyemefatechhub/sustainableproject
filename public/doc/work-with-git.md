@@ -3,6 +3,8 @@ Work with Git
 
 Here is a basic work flow when you work with Git and a master on GitHub or GitLab.
 
+[[_TOC_]]
+
 
 
 Quick reference
@@ -41,6 +43,15 @@ You have installed Git and you have a existing repo available to play around wit
 
 
 
+Video playlist on Git and GitHub
+--------------------------
+
+You might also want to try out some of the videos in the following playlist as a complement to this article.
+
+* [Git, GitHub and GitLab - Learn and practice](https://www.youtube.com/playlist?list=PLEtyhUSKTK3iTFcdLANJq0TkKo246XAlv)
+
+
+
 Git Bash
 --------------------------
 
@@ -62,6 +73,7 @@ Here are som commands that are useful in a Unix terminal.
 | `touch file.txt` | Create a new file named `file.txt`
 | `cat file.txt` | Show the content of the file.
 | `more file.txt` | Show the content of the file and paginate its output.
+| `rm file.txt` | Remove the file.
 
 Try to open up Git Bash (or Terminal in MacOS or any Linux terminal) and play around with the commands above to see how they works.
 
