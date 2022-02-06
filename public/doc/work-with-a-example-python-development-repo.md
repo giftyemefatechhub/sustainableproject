@@ -7,6 +7,15 @@ This example shows how you can get going with a Python project using Git, Make, 
 
 
 
+Video
+---------------------------
+
+The following video show when I work through parts of this article.
+
+[![](http://img.youtube.com/vi/nWsm0COnWew/0.jpg)](http://www.youtube.com/watch?v=nWsm0COnWew "YouTube: Work with an example Python development repository with code analysis and test tools")
+
+
+
 Preconditions
 -------------------------
 
@@ -15,7 +24,7 @@ The article is written to be used on one of the following environments.
 * Windows where Python is installed in the Windows installation and the terminal used is Git Bash.
 * Linux, macOS or Windows with WSL.
 
-You have an development environment that fullfills the needs as specified in [Lab environment](lab-environment).
+You have an development environment that fulfills the needs as specified in [Lab environment](lab-environment).
 
 You can work using a [Python virtual environment](python-venv).
 
@@ -53,9 +62,9 @@ This will check what Python executable you are currently using with the Makefile
 make version
 ```
 
-You can change the executable used by defining it of the commandline or as a environment variable.
+You can change the executable used by defining it of the command line or as a environment variable.
 
-This is how to change on the commandline.
+This is how to change on the command line.
 
 ```
 PYTHON=python3 make version
@@ -91,7 +100,7 @@ Now we activate the venv.
 . .venv/bin/activate
 ```
 
-Remember that you can deactive the venv by just entering the command `deactivate`.
+Remember that you can deactivate the venv by just entering the command `deactivate`.
 
 Lets stay in the venv and install the needed packages from the file `requirements.txt`. The makefile includes a target that does that.
 

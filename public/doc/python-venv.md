@@ -3,7 +3,7 @@ Work in a Python virtual environment
 
 A virtual environment in Python means you can install the tools and libraries needed within the projects files.
 
-The benefit is that you do not need to install these globally in your operatingsystem, you can install them specifically for each project without polluting your server with various installations.
+The benefit is that you do not need to install these globally in your operating system, you can install them specifically for each project without polluting your server with various installations.
 
 This article shows the basic approach when creating and working with a virtual environment and it assumes that you are working on a bash-terminal.
 
@@ -64,7 +64,7 @@ You can see that the `.venv` directory contains some files and libraries. The co
 
 You now need to activate the particular environment. You can have several virtual environments in their own directories, but you can only have one active at the time.
 
-When you activate it, all Python commands will take the .venv directory into account.
+When you activate it, all Python commands will take the `.venv` directory into account.
 
 If you use a Python installation on Window, then activate like this. Remember that we are doing this on a bash terminal like Git Bash. It looks different when doing this on a Window terminal (cmd, powershell).
 
@@ -102,7 +102,7 @@ python -m pip install -r requirements.txt
 python -m pip list
 ```
 
-It is preferrable to use a `requirements.txt` for the needed packages and tools. This file is a text files with the packages to install and one can set explicitly the version to be installed.
+It is preferable to use a `requirements.txt` for the needed packages and tools. This file is a text files with the packages to install and one can set explicitly the version to be installed.
 
 
 
@@ -121,7 +121,7 @@ Note that the terminal prompt changed itself again and removed the directory of 
 Final thoughts
 --------------------------
 
-If you do something wrong, or you want to restart your venv, then you can just remove the venv directory and init it again and install the packages you need.
+If you do something wrong, or you want to restart your venv, then you can just remove the venv directory and create it again and install the packages you need.
 
 This is really useful when you work on a project with your team. You can assure that all your team members have exactly the same setup and version of the pip packages by defining this in the requirements file.
 
