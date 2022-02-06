@@ -21,13 +21,8 @@ Video
 
 The following video show when I work through parts of this article.
 
-[![](http://img.youtube.com/vi/UsmNyNxndv4/0.jpg)](http://www.youtube.com/watch?v=UsmNyNxndv4 "Get going with Python venv and virtual environments")
+[![](http://img.youtube.com/vi/UsmNyNxndv4/0.jpg)](http://www.youtube.com/watch?v=UsmNyNxndv4 "YouTube: Get going with Python venv and virtual environments")
 
-[![](http://img.youtube.com/vi/UsmNyNxndv4/0.jpg)](http://www.youtube.com/watch?v=UsmNyNxndv4)
-
-![](http://img.youtube.com/vi/UsmNyNxndv4/0.jpg)
-
-](http://www.youtube.com/watch?v=UsmNyNxndv4 "Get going with Python venv and virtual environments")
 
 
 Create and use a virtual environment
