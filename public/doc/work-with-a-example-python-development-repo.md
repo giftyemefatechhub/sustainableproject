@@ -66,7 +66,7 @@ This is how to do it using an environment variable.
 ```
 export PYTHON=python3
 make version
-``
+```
 
 You could also go into the Makefile and update it. But that would be bad if your teammates have another setting for it so go ahead by using the environment variable like above.
 
