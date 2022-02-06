@@ -111,10 +111,9 @@ If you are using Git Bash on Windows, then check out this post about how to [ins
 1. [Install GNU make](https://community.chocolatey.org/packages/make) using `choco install make` using PowerShell (you might need to run the terminal as admin).
 1. Open a new window for Git Bash and check that it works be checking what version you have using `make --version`.
 
+If you need assistance there is a video here.
 
-<!--
-Make video
--->
+* [Install GNU Make on Windows using Chocolatey package manager](https://www.youtube.com/watch?v=5TavcolACQY&list=PLEtyhUSKTK3hOCnMrPKGOu3_VjUAkhsgG&index=3)
 
 
 
