@@ -16,6 +16,15 @@ The article is written to be used on one of the following environments.
 
 
 
+Video
+---------------------------
+
+The following video show when I work through parts of this article.
+
+[![](http://img.youtube.com/vi/UsmNyNxndv4/0.jpg)](http://www.youtube.com/watch?v=UsmNyNxndv4 "Get going with Python venv and virtual environments")
+
+
+
 Create and use a virtual environment
 ---------------------------
 
@@ -86,7 +95,7 @@ python -m pip install numpy
 python -m pip list
 ```
 
-This is how to install from the requirements file. The file `requirements.txt` can contian a long list of packages.
+This is how to install from the requirements file. The file `requirements.txt` can contain a long list of packages.
 
 ```
 python -m pip install -r requirements.txt
@@ -105,7 +114,7 @@ When you are done you can deactivate the virtual environment and stop using it.
 deactivate
 ```
 
-Note that the terminal promt changed itself again and removed the directory of the venv.
+Note that the terminal prompt changed itself again and removed the directory of the venv.
 
 
 
