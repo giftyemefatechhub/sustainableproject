@@ -10,7 +10,7 @@ This article shows the basic approach when creating and working with a virtual e
 The article is written to be used on one of the following environments.
 
 * Windows where Python is installed in the Windows installation and the terminal used is Git Bash.
-* Linux, macOS or Windows with WSL.
+* Linux, macOS or Windows with WSL using a bash compatible terminal.
 
 [[_TOC_]]
 
