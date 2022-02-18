@@ -56,7 +56,9 @@ During this week you shall review the prerecored lectures that also have reading
 * Lecture 6 - Introduction to Software Testing
 * Lecture 7 - Software Unit Testing
 
-The session in class will focus on the exercise "Exercise 2 - Software Unit Testing" that will learn you the basics of unittesting and code coverage in Python.
+The session in class will focus on the exercise "Exercise 2 - Unit testing and code coverage in Python" that will learn you the basics of unittesting and code coverage in Python.
+
+There will also be discussions on how to get going with the team and start with a solid base.
 
 
 
