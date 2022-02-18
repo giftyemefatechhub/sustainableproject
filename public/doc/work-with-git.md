@@ -177,7 +177,7 @@ Your local repo is then updated to mirror the master.
 Create a tag and push it
 --------------------------
 
-When you have a certain baseline in your project, you mey want to tag it with a version number. This makes it easier to know tha status of the repo.
+When you have a certain baseline in your project, you may want to tag it with a version number. This makes it easier to know the status of the repo and make it visible what part of it that might be thought of as more stable.
 
 ```
 git tag -a v1.0.0
@@ -187,3 +187,59 @@ git push --tags
 You can add a new tag at any stage.
 
 You need to push the tags separately, by adding `--tags`.
+
+You can list all tags like this.
+
+```
+git tag
+```
+
+
+
+Review the Git history
+--------------------------
+
+Check out the tags and the commit history for the repo.
+
+The command `git log` shows a complete history on each commit made to the repo. Each commit has a commit reference to make it unique.
+
+```
+git log
+```
+
+You can get a more pretty online output with the following command.
+
+```
+git log --pretty=oneline
+```
+
+You can also format the output for enhanced clarity.
+
+```
+git log --pretty=format:"%h - %an, %ar : %s"
+```
+
+You can make an alias of the above command. That is quite useful when using it a lot to review the commit history.
+
+Here is how to create an alias named 'hist'.
+
+```
+git config --global alias.hist 'log --pretty=format:"%h - %an, %ar : %s"'
+```
+
+Now you can use the alias as an ordinary git command.
+
+```
+git hist
+```
+
+When using services like GitHub and GitLab they usually have a really good way of displaying the commit history and visually showing all the details on each file and changes involved in a certain commit.
+
+
+
+Learn more Git basics
+--------------------------
+
+The [documentation for git is available online](https://git-scm.com/doc).
+
+There are a few [short videos that provide the essentials about Git](https://git-scm.com/videos).
