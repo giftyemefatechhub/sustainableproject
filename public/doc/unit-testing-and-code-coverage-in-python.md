@@ -120,13 +120,13 @@ make unittest
 In the makefile we use another way of executing all the unit tests in the current folder. You can try to execute this command to see all the tests execute again.
 
 ```
-python3 -m unittest discover .
+python3 -m unittest discover
 ```
 
 If you add a `-v` option you will se more details on each testcase executed.
 
 ```
-python3 -m unittest discover -v .
+python3 -m unittest discover -v
 ```
 
 Lets move over to code coverage.
@@ -142,7 +142,7 @@ make coverage
 This is how to run the actual commands, one by one.
 
 ```
-coverage run -m unittest discover .
+coverage run -m unittest discover
 ```
 
 The execute the coverage report.
