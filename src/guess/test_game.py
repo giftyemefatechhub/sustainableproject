@@ -4,10 +4,10 @@
 """Unit testing."""
 
 import unittest
-from guess import game
+import game
 
 
-class TestGameClass(unittest.TestCase):
+class TestGameClass(unittest.TestCase):  # noqa: H601
     """Test the class."""
 
     def test_init_default_object(self):
@@ -26,5 +26,5 @@ class TestGameClass(unittest.TestCase):
         self.assertTrue(exp)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -15,7 +15,7 @@ class Dice_graphic(dice.Dice):
 
     # class variable shared by all instances
     # visual = ['⚀', '⚁', '⚂', '⚃', '⚄', '⚅']
-    visual = ['[1]', '[2]', '[3]', '[4]', '[5]', '[6]']
+    visual = ["[1]", "[2]", "[3]", "[4]", "[5]", "[6]"]
 
     def __init__(self):
         """Init the object."""

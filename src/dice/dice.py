@@ -46,7 +46,7 @@ compare the code from the main program and see how its actually done.
 import random
 
 
-class Dice():
+class Dice:
     """Example of dice class."""
 
     # class variable shared by all instances

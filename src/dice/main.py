@@ -69,6 +69,6 @@ def main():
     print(f"Rolling the dice, it was a {roll} using faces={die.faces}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Call the main function.
     main()

@@ -1,16 +1,19 @@
-# Unittest
-coverage
-
 # Code analysis
 bandit
-#metrics.pylint
+cohesion
 flake8
 flake8-docstrings
 flake8-polyfill
+#metrics.pylint
 pylint
 radon
-cohesion
+
+# Code style
+black
 
 # Documentation
 pdoc3
 sphinx
+
+# Unit test and coverage
+coverage

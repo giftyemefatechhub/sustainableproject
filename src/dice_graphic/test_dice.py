@@ -28,5 +28,5 @@ class TestDiceClass(unittest.TestCase):  # noqa: H601
         self.assertTrue(exp)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

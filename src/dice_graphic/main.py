@@ -64,6 +64,6 @@ def main():
     print(f"The sum of all rolls where {dice_sum}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Call the main function.
     main()
