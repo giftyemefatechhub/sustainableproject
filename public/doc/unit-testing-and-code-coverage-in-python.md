@@ -106,12 +106,12 @@ make lint
 Execute the unit tests by running them from their main function.
 
 ```
-python dice_test.py
+python test_dice.py
 ```
 
-Review the code for the unit tests, it is in the file `dice_test.py`. That is how you can write the unit tests.
+Review the code for the unit tests, it is in the file `test_dice.py`. That is how you can write the unit tests.
 
-You can also execute the testsuite `*_test.py` using make.
+You can also execute the testsuite using make.
 
 ```
 make unittest
@@ -120,13 +120,13 @@ make unittest
 In the makefile we use another way of executing all the unit tests in the current folder. You can try to execute this command to see all the tests execute again.
 
 ```
-python3 -m unittest discover . "*_test.py"
+python3 -m unittest discover .
 ```
 
 If you add a `-v` option you will se more details on each testcase executed.
 
 ```
-python3 -m unittest discover -v . "*_test.py"
+python3 -m unittest discover -v .
 ```
 
 Lets move over to code coverage.
@@ -142,7 +142,7 @@ make coverage
 This is how to run the actual commands, one by one.
 
 ```
-coverage run -m unittest discover . "*_test.py"
+coverage run -m unittest discover .
 ```
 
 The execute the coverage report.
@@ -166,6 +166,8 @@ $ firefox htmlcov/index.html
 
 In your web browser you can now inspect the parts that is covered and not covered by unit tests.
 
+
+
 ### NOW - DO THIS
 
 Try to add more unit testcases to reach a code coverage of 100%.
@@ -177,6 +179,7 @@ You can remove all the generated files by using the target clean in the Makefile
 ```
 make clean
 ```
+
 
 
 Exercise 2 - Guess my number
