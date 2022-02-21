@@ -51,21 +51,56 @@ Try to have some code written already by early next week. If you have that - the
 Week 06 - Lets do some unittesting
 ---------------------
 
-During this week you shall review the prerecored lectures that also have reading instructions.
+During this week you shall review the pre recorded lectures that also have reading instructions.
 
 * Lecture 6 - Introduction to Software Testing
 * Lecture 7 - Software Unit Testing
 
-The session in class will focus on the exercise "Exercise 2 - Unit testing and code coverage in Python" that will learn you the basics of unittesting and code coverage in Python.
+The session in class will focus on the exercise "Exercise 2 - Unit testing and code coverage in Python" that will learn you the basics of unit testing and code coverage in Python.
 
 There will also be discussions on how to get going with the team and start with a solid base.
+
+Questions and things to deal with (first session in class were discussions about this)...
+
+* How to get going with the team work
+* Coding
+    * Read through spec and agree on your focus
+    * Sketch an UML diagram
+    * Agree on classes and larger modules (with several classes)
+    * Work using public interfaces and create empty classes/methods
+    * Divide work in team - some do more, some do less - its fine
+
+* Git master & integration manager
+    * Setup a git repo for the project
+        * Perhaps use the available python template to get a quick start
+    * Create empty files, but name them so everybody sees the whole picture
+        * Create usable but empty classes & methods for the public interfaces
+    * Integrate for the first time and see that it works
+        * Make someone responsible for Main/Shell class that tie it all together into an application?
+    * Add the testsuite
+        * Add empty test files
+        * Add testclasses for each testobject
+        * Add a empty/assertTrue testcase for each class
+        * Run the testsuite and see it work and pass
+
+* Start work
+    * Do not change the public interface without having a discussion on it, perhaps GitHub issues would be a great idea
+    * Integrate early, at least once a week or when needed
+    * Do not integrate before each has a passing testsuite
+    * Integrate by:
+        * Copying files
+        * Fork and pull requests
+        * All write to the same repo and work in
+            * main
+            * branches
+
 
 
 
 Week 07 - TDD and Documentation
 ---------------------
 
-During this week you shall review the prerecored lectures that also have reading instructions.
+During this week you shall review the pre recorded lectures that also have reading instructions.
 
 * Lecture 8 - Test-driven development
 * Lecture 9 - Software Documentation
