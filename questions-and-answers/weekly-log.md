@@ -110,6 +110,14 @@ The session in class will focus on the following exercises:
 * Exercise 3 - Test Driven Development
 * Exercise 4 - Software Documentation
 
+You should now have a pretty good idea on how to structure your code to make it testable. Writing code that is easy to test is a good feature of a programmer.
+
+We will also  see how the following code can be tested.
+
+* Randomized values
+* Exceptions
+* Functions that print
+
 
 
 Week 08 - Part 3 Sustainable programming and Clean code

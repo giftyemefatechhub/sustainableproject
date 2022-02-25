@@ -41,7 +41,7 @@ clean:
 	rm -rf __pycache__
 	rm -rf htmlcov
 
-clean-doc:
+clean-doc: clean
 	rm -rf doc
 
 clean-all: clean clean-doc
