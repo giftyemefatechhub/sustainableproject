@@ -3,14 +3,6 @@ Exercise - Test driven development
 
 In this exercise you shall practise how to work according to the test-driven development process where you write your tests first and then write code to pass the test.
 
-Do remember the TDD mantra, "red/green/refactor", repeating the steps of adding test cases that fail, passing them, and refactoring.
-
-* Decide on a feature you want to develop
-* Add a test case for the feature
-* Execute the test case and watch it fail
-* Implement the feature
-* Execute the test case and watch it pass
-
 [[_TOC_]]
 
 
@@ -28,6 +20,19 @@ Prepare
 You already have the exercise repo with the "dice" and the "guessing game".
 
 Otherwise you might [find the repo oopython on GitLab](https://gitlab.com/mikael-roos/oopython).
+
+
+
+TDD mantra
+--------------------------
+
+Do remember the TDD mantra, "red/green/refactor", repeating the steps of adding test cases that fail, passing them, and refactoring.
+
+1. Decide on a feature you want to develop
+1. Add a test case for the feature
+1. Execute the test case and watch it fail
+1. Implement the feature
+1. Execute the test case and watch it pass
 
 
 
@@ -51,8 +56,6 @@ Watch the testcase fail.
 Implement the minimal amount of code to pass the testcase.
 
 Watch the testcase pass.
-
-Again.
 
 Repeat until the feature is fully implemented and tested.
 

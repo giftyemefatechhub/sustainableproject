@@ -37,14 +37,17 @@ installed:
 # Cleanup generated and installed files.
 #
 clean:
+	@$(call MESSAGE,$@)
 	rm -f .coverage *.pyc
 	rm -rf __pycache__
 	rm -rf htmlcov
 
 clean-doc: clean
+	@$(call MESSAGE,$@)
 	rm -rf doc
 
 clean-all: clean clean-doc
+	@$(call MESSAGE,$@)
 	rm -rf .venv
 
 
