@@ -133,13 +133,15 @@ The code is in the following directories:
 
 
 
-### make pydoc or make pdoc
+### make pdoc
 
-Go into the two directories and build the documentation using pydoc or pdoc. Choose the one you think is best for its purpose.
+Go into the two directories and build the documentation pdoc.
 
 Study the documentation for each project and consider if you are getting a good picture of the code by reviewing the documentation.
 
 These projects contain more classes and object oriented structure like inheritance and composition.
+
+PS. The generated documentation structure differ between dice_graphic and guess, you can review the Makefiles to see what differs.
 
 
 
