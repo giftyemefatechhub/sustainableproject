@@ -93,15 +93,18 @@ test: lint coverage
 #
 .PHONY: pydoc
 pydoc:
+	@$(call MESSAGE,$@)
 	# This does not work on Windows installed Python
 	$(PYTHON) -m pydoc -w "$(PWD)"
 	install -d doc/pydoc
 	mv *.html doc/pydoc
 
 pdoc:
+	@$(call MESSAGE,$@)
 	pdoc --force --html --output-dir doc/pdoc *.py
 
 pyreverse:
+	@$(call MESSAGE,$@)
 	install -d doc/pyreverse
 	pyreverse *.py
 	dot -Tpng classes.dot -o doc/pyreverse/classes.png
