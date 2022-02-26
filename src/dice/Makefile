@@ -95,7 +95,7 @@ test: lint coverage
 pydoc:
 	$(PYTHON) -m pydoc -w "$(PWD)"
 	install -d doc/pydoc
-	mv *.html doc/pydoc
+	mv -f *.html doc/pydoc
 
 pdoc:
 	pdoc --force --html --output-dir doc/pdoc *.py
