@@ -93,15 +93,12 @@ test: lint coverage
 #
 .PHONY: pydoc
 pydoc:
-	install -d doc/pydoc
 	$(PYTHON) -m pydoc -w "$(PWD)"
+	install -d doc/pydoc
 	mv *.html doc/pydoc
 
 pdoc:
-	rm -rf doc/pdoc
-	pdoc --html -o doc/pdoc .
-
-doc: pdoc pyreverse #pydoc sphinx
+	pdoc --force --html --output-dir doc/pdoc *.py
 
 pyreverse:
 	install -d doc/pyreverse
@@ -109,7 +106,9 @@ pyreverse:
 	dot -Tpng classes.dot -o doc/pyreverse/classes.png
 	dot -Tpng packages.dot -o doc/pyreverse/packages.png
 	rm -f classes.dot packages.dot
-	ls -l doc/pyreverse
+
+doc: pdoc pyreverse #pydoc sphinx
+
 
 
 # ---------------------------------------------------------
