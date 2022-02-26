@@ -97,18 +97,17 @@ It is real easy to generate the documentation once you have documented your code
 
 
 
-### make pydoc pdoc
+### make pdoc
 
-The Makefile supports both pydoc and pdoc through the following targets.
+The Makefile supports pdoc through the following target.
 
 ```
-make pydoc
 make pdoc
 ```
 
-Verify that both targets work.
+Verify that the target work.
 
-Inspect the Makefile to see how the two commands are implemented and what the outcome is.
+Inspect the Makefile to see what commands are implemented behind the target.
 
 Check in the `doc/` directory what was generated.
 
@@ -150,7 +149,7 @@ These projects contain more classes and object oriented structure like inheritan
 
 
 
-Exercise 3 - Dice, generate UML diagrams
+Exercise 3 - Generate documentation as UML diagrams
 --------------------------
 
 The code is in the directory `dice/`.

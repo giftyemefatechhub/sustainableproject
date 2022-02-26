@@ -93,9 +93,10 @@ test: lint coverage
 #
 .PHONY: pydoc
 pydoc:
+	# This does not work on Windows installed Python
 	$(PYTHON) -m pydoc -w "$(PWD)"
 	install -d doc/pydoc
-	mv -f *.html doc/pydoc
+	mv *.html doc/pydoc
 
 pdoc:
 	pdoc --force --html --output-dir doc/pdoc *.py
