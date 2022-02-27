@@ -13,6 +13,7 @@ class TestSomeClass(unittest.TestCase):
     def test_highscore1(self):
         """Verify that a specific exception is raised in the code."""
         obj = main.SomeClass()
+
         with self.assertRaises(FileNotFoundError):
             obj.highscore1()
 

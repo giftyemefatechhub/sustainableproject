@@ -21,6 +21,7 @@ class TestDiceClass(unittest.TestCase):
 
         # Get the arguments that the print function was called with
         args, _ = mock_print.call_args
+        print(args)
         # Check if the last roll is printed
         self.assertTrue(str(res) in args[0], args)
         # Check if the value of rolls_made is printed

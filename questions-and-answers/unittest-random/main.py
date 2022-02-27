@@ -9,14 +9,12 @@ import random
 class SomeClass():
     """Example of a class."""
 
-    magic_number = None
-
     def randomize_number(self):
         """Generate a new number."""
         self.magic_number = random.randint(1, 100)
 
     def check_number(self):
-        """Open the highscore file."""
+        """Check the number is valid."""
         if self.magic_number == None:
             raise Exception("You forgot to init the game.")
         elif self.magic_number == 13:

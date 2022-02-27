@@ -20,7 +20,7 @@ class TestDiceClass(unittest.TestCase):  # noqa: H601
         self.assertEqual(res, exp)
 
     def test_roll_a_dice(self):
-        """Rool a dice and check value is in bounds."""
+        """Roll a dice and check value is in bounds."""
         die = dice.Dice()
 
         res = die.roll()

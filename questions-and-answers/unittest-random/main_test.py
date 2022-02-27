@@ -11,13 +11,13 @@ class TestSomeClass(unittest.TestCase):
     """Test the class."""
 
     def test_check_without_randomize(self):
-        """Verify that the exception is raised."""
+        """Use the game without initialize it."""
         obj = main.SomeClass()
         with self.assertRaises(Exception):
             obj.check_number()
 
     def test_check_number_being_13(self):
-        """Verify that the exception is raised."""
+        """Check when number is 13."""
         obj = main.SomeClass()
         obj.randomize_number()
         obj.magic_number = 13
@@ -25,7 +25,7 @@ class TestSomeClass(unittest.TestCase):
             obj.check_number()
 
     def test_check_number_not_being_13(self):
-        """Verify that the code works."""
+        """Check when number is not 13."""
         obj = main.SomeClass()
         obj.randomize_number()
         obj.magic_number = 42

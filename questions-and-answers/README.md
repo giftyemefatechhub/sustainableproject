@@ -219,25 +219,43 @@ Now you have an embryo to a structure supporting a growing project. You can see 
 
 ### How to unittest a method that is printing a string to stdout?
 
-The question and answer is defined in an issue:
+I can imagine a few different strategies for this.
 
-* [How to unittest a method that is printing a string to stdout?](https://gitlab.com/mikael-roos/sustainable-programming-exercise/-/issues/4)
+A) First I would consider rewriting the module to return values instead of printing them to the console. That might be a test object that is more easy to test. That would be my main strategy.
+
+B) If that can not be done I would consider to capture the output to a string and then check what it contains. This might be useful when a lot of text is printed and one only wants to check that the text contains a few items.
+
+C) I can also use the built in `unittest.mock` library where I can mock a method/function and capture how it is called.
+
+I created a sample program in [dice-test-print/](dice-test-print), a small extension of the dice program, where the dice now have a method that is printing some statistics. Its the method [`print_last_roll(self)`](dice-test-print/dice.py#L30-36) that is the tricky part to test since it does a `print()`.
+
+I then created a unit test using strategy B) and that program is visible in [dice_capture_test.py](dice-test-print/dice_capture_test.py). This would do the trick and is a valid way to unittest a method doing print.
+
+You can compare that testcase with the one [dice_mock_test.py](dice-test-print/dice_mock_test.py) that utilises strategy C) for creating the unittest.
+
+All these are a bit more advanced than general unittests but they are most helpful since it is not too uncommon that one need to deal with unittesting of functions/methods that are printing to the console/stdout.
+
+Still, do consider refactor the code, if possible. That might be the first option one should choose. In my example above I would not really print in the dice class, I would return the values needed to enable the user to print the message instead. Perhaps it does not make the problem go away, but it enables the dice class to be easier to test since it does not depend on stdout/console.
 
 
 
 ### How to unittest a method raising exceptions?
 
-The question and answer is defined in an issue:
-
-* [How to unittest a method raising exceptions?](https://gitlab.com/mikael-roos/sustainable-programming-exercise/-/issues/5)
+I created a example program in [`unittest-exception/`](unittest-exception) to show various ways of working with unittests of methods raising, or catching, exceptions.
 
 
 
 ### How to unittest a method doing random things?
 
-The question and answer is defined in an issue:
+I created a example program in [`unittest-random/`](unittest-random) to show various ways of working with unittests of methods that have some kind of randomness in them, or they depend on state that can hardly be changed or prepared from the unittest perspective.
 
-* [How to unittest a method doing random things?](https://gitlab.com/mikael-roos/sustainable-programming-exercise/-/issues/6)
+
+
+### How to print information from a unittest?
+
+Sometimes you want to debug your unittests (or your code) and print information from the execution. You can do so using the logging module.
+
+* [dice-test-log-during-test](dice-test-log-during-test)
 
 
 
