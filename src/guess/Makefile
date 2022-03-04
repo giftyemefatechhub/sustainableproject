@@ -123,11 +123,11 @@ doc: pdoc pyreverse #pydoc sphinx
 #
 radon-cc:
 	@$(call MESSAGE,$@)
-	radon cc . -a
+	radon cc --show-complexity --average .
 
 radon-mi:
 	@$(call MESSAGE,$@)
-	radon mi .
+	radon mi --show .
 
 radon-raw:
 	@$(call MESSAGE,$@)
@@ -137,11 +137,17 @@ radon-hal:
 	@$(call MESSAGE,$@)
 	radon hal .
 
-metrics: radon-cc radon-mi radon-raw radon-hal
+cohesion:
+	@$(call MESSAGE,$@)
+	cohesion --directory .
+
+metrics: radon-cc radon-mi radon-raw radon-hal cohesion
+
 
 
 # ---------------------------------------------------------
 # Find security issues in your project.
 #
 bandit:
-	bandit -r .
+	@$(call MESSAGE,$@)
+	bandit --recursive .
