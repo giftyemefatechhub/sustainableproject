@@ -1,7 +1,11 @@
+---
+revision:
+    "2023-01-03": "(A, mos) First release."
+---
 Weekly log
 =====================
 
-This is the teachers notes on what might be important to do to get a nice journey through the course.
+This is the teachers notes on what might be important to do to get a nice journey through these parts of the course.
 
 [[_TOC_]]
 
@@ -10,8 +14,11 @@ This is the teachers notes on what might be important to do to get a nice journe
 Week 05 - Part 2 Testing
 ---------------------
 
-"Lecture 05 - Introduction to the module" is an introduction to the remaining parts of the course and focus on getting started with the development environment and the Assignment 02 project.
+Lets start upp part 2 of the course, a project in object oriented Python with unit testing.
 
+**Teacher activities**
+
+"Lecture 05 - Introduction to the module" is an introduction to the remaining parts of the course and focus on getting started with the development environment and the Assignment 02 project.
 
 
 ### Things to do on your own
@@ -48,13 +55,12 @@ Try to have some code written already by early next week. If you have that - the
 
 
 
-Week 06 - Lets do some unittesting
+Week 06 - Unit testing
 ---------------------
 
-During this week you shall review the pre recorded lectures that also have reading instructions.
+Add unit tests to your project.
 
-* Lecture 6 - Introduction to Software Testing
-* Lecture 7 - Software Unit Testing
+**Teacher activities**
 
 The session in class will focus on the exercise "Exercise 2 - Unit testing and code coverage in Python" that will learn you the basics of unit testing and code coverage in Python.
 
@@ -94,16 +100,25 @@ Questions and things to deal with (first session in class were discussions about
             * main
             * branches
 
+**Lectures**
+
+During this week you shall review the pre recorded lectures that also have reading instructions.
+
+* Lecture 6 - Introduction to Software Testing
+* Lecture 7 - Software Unit Testing
+
+**Work**
+
+* Add unit testing to A02 (amongst other things).
 
 
 
 Week 07 - TDD and Documentation
 ---------------------
 
-During this week you shall review the pre recorded lectures that also have reading instructions.
+Final week of part 2.
 
-* Lecture 8 - Test-driven development
-* Lecture 9 - Software Documentation
+**Teacher activities**
 
 The session in class will focus on the following exercises:
 
@@ -112,50 +127,82 @@ The session in class will focus on the following exercises:
 
 You should now have a pretty good idea on how to structure your code to make it testable. Writing code that is easy to test is a good feature of a programmer.
 
-We will also  see how the following code can be tested.
+We will also see how the following code can be tested.
 
 * Randomized values
 * Exceptions
 * Functions that print
 
+**Lectures**
+
+During this week you shall review the pre recorded lectures that also have reading instructions.
+
+* Lecture 8 - Test-driven development
+* Lecture 9 - Software Documentation
+
+**Work**
+
+* Prepare to submit A02 next week.
 
 
-Week 08 - Part 3 Sustainable programming and Clean code
+
+Week 08 - Part 3 Clean code
 ---------------------
 
-"Lecture 10 - Introduction to the module" is an introduction to what will happen.
+Start of part 3 of the course.
 
-The Assignment 3 "Sustainable programming through good and clean code" will be presented together with guidelines on how to structure the report.
+**Teacher activities**
+
+* "Lecture 10 - Introduction to the module" is an introduction to this part of the course.
+* The Assignment 3 "Sustainable programming through good and clean code" will be presented together with guidelines on how to structure the report.
 
 The session in class will focus on the following exercises:
 
 * Exercise 5 - Static code analysis and metrics
 
+**Lectures**
+
 During this week you shall review the prerecored lectures that also have reading instructions.
 
 * Lecture 11 - What about good and clean code?
 
-Deadline to submit A02.
+**Work**
+
+* Deadline to submit A02.
 
 
 
 Week 09 - Opposion and Report week
 ---------------------
 
-Begin the opposition part of A02.
+**Teacher activities**
+
+* Start the opposition part of A02.
+* Classroom session with analysing metrics.
+* Helpsession with the writing of the report.
+
+**Lectures**
 
 During this week you shall review the prerecored lectures that also have reading instructions.
 
 * Lecture 12 - Software development philosophies
 * Lecture 13 - Static code analysing and metrics
 
-Write on your report.
+**Work**
+
+* Begin the opposition part of A02.
+* Write on your report A03.
 
 
 
 Week 10 - Submission week
 ---------------------
 
-Submit the opposition report on A02.
+**Teacher activities**
 
-Submit the report on A03.
+* Supervision and helpsession with the writing of the report.
+
+**Submit your work**
+
+* Submit the opposition report on A02.
+* Submit the report on A03.
