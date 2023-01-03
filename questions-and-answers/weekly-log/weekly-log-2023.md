@@ -11,6 +11,15 @@ This is the teachers notes on what might be important to do to get a nice journe
 
 
 
+Prepare
+---------------------
+
+Before you enter part 2 & 3 of the course you have acquainted yourself with the following.
+
+* [Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md)
+
+
+
 Week 05 - Part 2 Testing
 ---------------------
 
@@ -18,7 +27,11 @@ Lets start upp part 2 of the course, a project in object oriented Python with un
 
 **Teacher activities**
 
-"Lecture 05 - Introduction to the module" is an introduction to the remaining parts of the course and focus on getting started with the development environment and the Assignment 02 project.
+* "Lecture 05 - Introduction to the module" is an introduction to part 2 & part 3 of the course.
+* Walkthrough of the Assignment 02 project.
+
+* About object oriented programming with Python. Hmmm, is this already fixed?
+* About importance of development environment.
 
 
 ### Things to do on your own
