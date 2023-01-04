@@ -1,3 +1,8 @@
+---
+revision:
+    "2023-01-04": "(B, mos) Added more details on requirements.txt."
+    "2022-01-04": "(A, mos) First version."
+---
 Work in a Python virtual environment
 ===========================
 
@@ -102,11 +107,25 @@ python -m pip install -r requirements.txt
 python -m pip list
 ```
 
+The file `requirements.txt` is a textfile and it can look like this where `#` is a comment.
+
+```text
+# Code analysis
+flake8
+pylint
+
+# Code style
+black
+
+# Unit test and coverage
+coverage
+```
+
 It is preferable to use a `requirements.txt` for the needed packages and tools. This file is a text files with the packages to install and one can set explicitly the version to be installed.
 
 
 
-### Install packages into the venv
+### Deactivate the venv
 
 When you are done you can deactivate the virtual environment and stop using it.
 
@@ -146,3 +165,4 @@ References
 * [12. Virtual Environments and Packages](https://docs.python.org/3/tutorial/venv.html)
 * [venv — Creation of virtual environments](https://docs.python.org/3/library/venv.html)
 * [Pip documentation](https://pip.pypa.io/en/stable/user_guide/)
+* [Requirements File Format](https://pip.pypa.io/en/stable/reference/requirements-file-format/)

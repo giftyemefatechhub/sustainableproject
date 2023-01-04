@@ -11,12 +11,39 @@ This is the teachers notes on what might be important to do to get a nice journe
 
 
 
+Precondition
+---------------------
+
+You should have knowledge on Git and GitHub and you should have Git with GitBash installed on your environment.
+
+You should have knowledge on how to write a object oriented program with Python using classes.
+
+
+
+Overview of part 2 & part 3
+---------------------
+
+"Part 2: Testing" is about testing and documentation of the code.
+
+* Work in teams of two and two and develop an application using object oriented Python.
+    * Apply linters to enhance the code.
+    * Use unit testing.
+* Oppose on other projects by reviewing them.
+
+"Part 3: Clean Code" is about the concept of what makes clean and good code.
+
+* Write a report and summarize your view of the topic and your learnings from the project work and the opposition.
+
+
+
 Prepare
 ---------------------
 
-Before you enter part 2 & 3 of the course you have acquainted yourself with the following.
+Prepare yourself through the following.
 
-* [Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md)
+1. [Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md). Review this article that provides an overview of Git commands and practice the commands on the terminal Git Bash. The article includes a [video playlist](https://www.youtube.com/playlist?list=PLEtyhUSKTK3iTFcdLANJq0TkKo246XAlv) that shows the basics.
+
+Using Git is optional but recommended.
 
 
 
