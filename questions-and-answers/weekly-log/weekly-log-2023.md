@@ -43,22 +43,32 @@ Prepare yourself through the following.
 
 1. [Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md). Review this article that provides an overview of Git commands and practice the commands on the terminal Git Bash. The article includes a [video playlist](https://www.youtube.com/playlist?list=PLEtyhUSKTK3iTFcdLANJq0TkKo246XAlv) that shows the basics.
 
-Using Git is optional but recommended.
+Using Git is optional in the assignment, but it is also highly recommended as a learning experience.
 
 
 
 Week 05 - Part 2 Testing
 ---------------------
 
-Lets start upp part 2 of the course, a project in object oriented Python with unit testing.
+Start with an overall introduction, get going with the lab environment and the assignment.
 
 **Teacher activities**
 
-* "Lecture 05 - Introduction to the module" is an introduction to part 2 & part 3 of the course.
-* Walkthrough of the Assignment 02 project.
+* Slides on "[Introduction to testing and clean code](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/lecture/intro-testing-clean-code/README.md)" as an overall introduction to the concepts.
 
 * About object oriented programming with Python. Hmmm, is this already fixed?
-* About importance of development environment.
+
+**Lab environment**
+
+* [Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md)
+* [Work in a Python virtual environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/python-venv.md)
+
+**Assignment**
+
+* Start of A02 and a walkthough of the requirements.
+
+
+
 
 
 ### Things to do on your own
@@ -86,6 +96,7 @@ You now have one week to get your team up to speed with the A02.
 * Walkthrouth the A02, prioritize if needed and decide on the project focus.
 * Do a rough sketch on the class design (UML).
 * Roughly try to divide the work (you do that class and you do that class), you can change this as the project goes on.
+* Decide on using Git or not.
 * Appoint a Git manager or someone who will be responsible to integrate all the members code into a working version.
 * Create the working directory and its structure, put it onto GitHub (or GitLab) so everybody has the same setup and easy access to linters and testtools.
     * A [project template](https://gitlab.com/mikael-roos/python-template) is available to make this easier.
