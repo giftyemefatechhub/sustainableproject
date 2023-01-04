@@ -3,7 +3,7 @@ author: mos
 revision: 
     2023-01-03: "(A, mos) first version"
 ---
-Clean code, metrics and philosophies with Python
+Clean code, software metrics and philosophies with Python
 ====================
 
 This is an introduction to the concept of Clean code, Software Metrics and Software philosophies with focus on Python.

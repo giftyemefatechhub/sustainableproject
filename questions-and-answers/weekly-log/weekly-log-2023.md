@@ -12,8 +12,10 @@ This is the teachers notes on what might be important to do to get a nice journe
 <!--
 TODO
 
-* Slide on test and clean code
-* Slide on Python unittesting 
+* Slide on test and clean code to summarize (including oopy)
+* Slide on python unittesting
+* Slide on clean code for part 3 summary
+    * Check if sonarcloud is an option to work with
 
 FIX
 
@@ -163,6 +165,7 @@ During this week you shall review the pre recored lectures that also have readin
 
 **Work**
 
+* Run metrics on your A02 code, anything to fix before submission?
 * Deadline to submit A02.
 * Start working on report for A03.
 
