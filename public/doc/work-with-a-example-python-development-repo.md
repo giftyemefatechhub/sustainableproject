@@ -154,6 +154,8 @@ make pylint
 make lint
 ```
 
+Try to solve all issues you get warnings for. That helps you write good and clean code.
+
 
 
 ### Enforce codestyle
@@ -165,7 +167,7 @@ make black
 make codestyle
 ```
 
-Your code might be updated to obey the codestyle "black".
+Your code might be updated to obey the codestyle "black". Having a unified codestyle is essential when working in teams.
 
 
 
@@ -202,6 +204,8 @@ Now run the program like this.
 ```
 python main.py
 ```
+
+You can run the linters, codestyle and tests like you did with the other example program.
 
 
 
