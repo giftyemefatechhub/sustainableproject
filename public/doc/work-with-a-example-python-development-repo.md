@@ -1,5 +1,6 @@
 ---
 revision:
+    "2023-01-04": "(B, mos) Added codestyle with black."
     "2022-01-04": "(A, mos) First version."
 ---
 Work with an example Python development repo
@@ -141,6 +142,10 @@ python main.py
 python main.py 7
 ```
 
+
+
+### The linters
+
 You can run the linters that verify the code using static code analysis.
 
 ```
@@ -148,6 +153,23 @@ make flake8
 make pylint
 make lint
 ```
+
+
+
+### Enforce codestyle
+
+You can run the tool that enforces the codestyle.
+
+```
+make black
+make codestyle
+```
+
+Your code might be updated to obey the codestyle "black".
+
+
+
+### The unit test and code coverage
 
 There are unit tests and reports of code coverage that you can run like this.
 
@@ -196,5 +218,6 @@ References
 * [GNU Make](https://www.gnu.org/software/make/manual/make.html)
 * [Flake8](https://flake8.pycqa.org/)
 * [pylint](https://pylint.org/)
+* [Black](https://black.readthedocs.io/en/stable/)
 * [unittest](https://docs.python.org/3/library/unittest.html)
 * [coverage](https://coverage.readthedocs.io/en/6.3.1/)
