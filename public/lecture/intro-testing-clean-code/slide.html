@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="theme-5">
+<meta charset="utf-8" />
+<link href="../html-slideshow.bundle.min.css" rel="stylesheet" />
+<link href="../style.css" rel="stylesheet" />
+<script src="https://dbwebb.se/cdn/js/html-slideshow_v1.1.0.bundle.min.js"></script>
+
+<title>Clean Code</title>
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# Clean Code
+## What is good and clean code?
+### Mikael Roos
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Agenda
+
+* What is good and clean code?
+* Unit testing
+* Clean code
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# What is good and clean code?
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Definition
+
+* 
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# About C#
+
+* 
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Using dotnet
+
+* A terminal command
+* Create a project
+* Build and run a project
+* Clean up
+
+<p class="footnote">Read more https://learn.microsoft.com/en-us/dotnet/core/tools/</p>
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Using dotnet...
+
+```
+dotnet create console -o MyApp
+
+dotnet build
+
+dotnet run
+
+dotnet clean
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Hello world
+
+A program that says Hello World
+
+```csharp
+Console.WriteLine("Hello, World!");
+```
+
+<p class="footnote">Working from C# version 9 and forward???</p>
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Hello world oldstyle
+
+A program that says Hello World, in the old style prior to .NET 6???
+
+```csharp
+using System;
+
+public class OldStyle {
+    public static void Main()
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Class in separate files
+
+* Separate the main from the application code
+* Put the main program in one file
+* Put the application code into its own file(s)
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Class in own file
+
+This is the class in its own file `MyClass.cs`
+
+```csharp
+class MyClass {
+    public static void Hi() {
+        Console.WriteLine("Hi!");
+    }
+}
+```
+
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+# Main in own file
+
+This is the main in its own file `Program.cs`
+
+```csharp
+Console.WriteLine("Hello, World!");
+
+MyClass.Hi();
+```
+
+</script>
+
+
+
+<script data-role="slide" type="text/html" data-markdown class="titlepage center">
+# The End
+</script>
+
+
+
+<script data-role="slide" data-markdown type="text/html">
+</script>
