@@ -9,7 +9,20 @@ This is the teachers notes on what might be important to do to get a nice journe
 
 [[_TOC_]]
 
+<!--
+TODO
 
+* Slide on test and clean code
+* Slide on Python unittesting 
+
+FIX
+
+* flake8 not working
+
+IMPROVE
+
+*
+-->
 
 Precondition
 ---------------------
@@ -56,13 +69,14 @@ Start with an overall introduction, get going with the lab environment and the a
 
 * Slides on "[Introduction to testing and clean code](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/lecture/intro-testing-clean-code/README.md)" as an overall introduction to the concepts.
 
-* About object oriented programming with Python. Hmmm, is this already fixed? Perhaps an OO example using slides?
+*_About object oriented programming with Python. Hmmm, is this already fixed? Perhaps an OO example using slides?_
 
-**Lab environment**
+
+**Lab environment & Exercises**
 
 * Ensure that you have [all tools in your lab environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/lab-environment.md).
-* Checkout "[Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md)" so you know you can work with it.
 * Learn how to "[Work in a Python virtual environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/python-venv.md)".
+* When you have installed all parts of the development environment, then you can try all tools out in the article/exercise "[Work with an example Python development repo](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-a-example-python-development-repo.md)".
 
 **Assignment**
 
@@ -71,88 +85,22 @@ Start with an overall introduction, get going with the lab environment and the a
 
 **Work**
 
-* Establish the project team and start working.
-
-
-### Things to do on your own
-
-To be on top of things you should individually do these exercises that are part of Lecture 05.
-
-* Install the lab environment.
-* Try out the example programs in the example repo.
-* Ensure you can setup a git repo and connect to GitHub.
-* Setup your own personal Python development project using a venv.
-    * A [project template](https://gitlab.com/mikael-roos/python-template) is available to make this easier.
-* Read the A02 to learn what your team should do in the project.
-
-You should try to do this before you meet with the team. That is the way to prepare yourself and becoming an active team member.
-
-
-
-### A healthy team
-
-You now have one week to get your team up to speed with the A02.
-
-* Have a first meeting.
-    * Make a health check, ask all members if they feel okey and are onboard and ready.
-    * What can each one bring to the table?
-* Walkthrouth the A02, prioritize if needed and decide on the project focus.
-* Do a rough sketch on the class design (UML).
-* Roughly try to divide the work (you do that class and you do that class), you can change this as the project goes on.
-* Decide on using Git or not.
-* Appoint a Git manager or someone who will be responsible to integrate all the members code into a working version.
-* Create the working directory and its structure, put it onto GitHub (or GitLab) so everybody has the same setup and easy access to linters and testtools.
-    * A [project template](https://gitlab.com/mikael-roos/python-template) is available to make this easier.
-* Make a main.py and you are on your way. Integrate your code at least once a week to avoid integration problems.
-
-Try to have some code written already by early next week. If you have that - then it will be a great start for unittesting.
+* Establish the project team and start working by reading through the guidelines in "[Hints for a healthy team](../../public/doc/hints-for-a-healthy-team.md)".
 
 
 
 Week 06 - Unit testing
 ---------------------
 
-Add unit tests to your project.
+How to add unit tests to your project.
 
 **Teacher activities**
 
-The session in class will focus on the exercise "Exercise 2 - Unit testing and code coverage in Python" that will learn you the basics of unit testing and code coverage in Python.
+* Slides on "[Python Uunit tests and code coverage](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/lecture/unittesting-in-python/README.md)" as an overall introduction to the concepts.
 
-There will also be discussions on how to get going with the team and start with a solid base.
+* A walkthrough of the exercise "[Unit testing and code coverage in Python](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/unit-testing-and-code-coverage-in-python.md)" that will learn you the basics of unit testing and code coverage in Python.
 
-Questions and things to deal with (first session in class were discussions about this)...
-
-* How to get going with the team work
-* Coding
-    * Read through spec and agree on your focus
-    * Sketch an UML diagram
-    * Agree on classes and larger modules (with several classes)
-    * Work using public interfaces and create empty classes/methods
-    * Divide work in team - some do more, some do less - its fine
-
-* Git master & integration manager
-    * Setup a git repo for the project
-        * Perhaps use the available python template to get a quick start
-    * Create empty files, but name them so everybody sees the whole picture
-        * Create usable but empty classes & methods for the public interfaces
-    * Integrate for the first time and see that it works
-        * Make someone responsible for Main/Shell class that tie it all together into an application?
-    * Add the testsuite
-        * Add empty test files
-        * Add testclasses for each testobject
-        * Add a empty/assertTrue testcase for each class
-        * Run the testsuite and see it work and pass
-
-* Start work
-    * Do not change the public interface without having a discussion on it, perhaps GitHub issues would be a great idea
-    * Integrate early, at least once a week or when needed
-    * Do not integrate before each has a passing testsuite
-    * Integrate by:
-        * Copying files
-        * Fork and pull requests
-        * All write to the same repo and work in
-            * main
-            * branches
+* A discussion on [how to become a healthy team (part 2)](../../public/doc/hints-for-a-healthy-team-part-2.md).
 
 **Lectures**
 
@@ -170,22 +118,14 @@ During this week you shall review the pre recorded lectures that also have readi
 Week 07 - TDD and Documentation
 ---------------------
 
-Final week of part 2.
+Final week of part 2, discuss TDD and generate documentation.
 
 **Teacher activities**
 
-The session in class will focus on the following exercises:
+The session in class will focus on discussing and solving the following exercises:
 
-* Exercise 3 - Test Driven Development
-* Exercise 4 - Software Documentation
-
-You should now have a pretty good idea on how to structure your code to make it testable. Writing code that is easy to test is a good feature of a programmer.
-
-We will also see how the following code can be tested.
-
-* Randomized values
-* Exceptions
-* Functions that print
+* [Test Driven Development](../../public/doc/test-driven-development.md)
+* [Software Documentation](../../public/doc/generate-python-documentation.md)
 
 **Lectures**
 
@@ -196,6 +136,7 @@ During this week you shall review the pre recorded lectures that also have readi
 
 **Work**
 
+* Generate documentation for you A02.
 * Prepare to submit A02 next week.
 
 
@@ -203,31 +144,34 @@ During this week you shall review the pre recorded lectures that also have readi
 Week 08 - Part 3 Clean code
 ---------------------
 
-Start of part 3 of the course.
+Lets review the concept of good and clean code.
 
 **Teacher activities**
 
-* "Lecture 10 - Introduction to the module" is an introduction to this part of the course.
+* The lecture "[Clean code, metrics and philosophies with Python](../../public/lecture/clean-code-metrics/README.md)" is an introduction to this part of the course.
 * The Assignment 3 "Sustainable programming through good and clean code" will be presented together with guidelines on how to structure the report.
 
 The session in class will focus on the following exercises:
 
-* Exercise 5 - Static code analysis and metrics
+* [Static code analysis and metrics](../../public/doc/static-code-analysis-and-metrics.md)
 
 **Lectures**
 
-During this week you shall review the prerecored lectures that also have reading instructions.
+During this week you shall review the pre recored lectures that also have reading instructions.
 
-* Lecture 11 - What about good and clean code?
+* Lecture 11 - Static code analysing and metrics
 
 **Work**
 
 * Deadline to submit A02.
+* Start working on report for A03.
 
 
 
 Week 09 - Opposion and Report week
 ---------------------
+
+Work with the report and the opposition.
 
 **Teacher activities**
 
@@ -239,8 +183,8 @@ Week 09 - Opposion and Report week
 
 During this week you shall review the prerecored lectures that also have reading instructions.
 
-* Lecture 12 - Software development philosophies
-* Lecture 13 - Static code analysing and metrics
+* Lecture 12 - What about good and clean code?
+* Lecture 13 - Software development philosophies
 
 **Work**
 
