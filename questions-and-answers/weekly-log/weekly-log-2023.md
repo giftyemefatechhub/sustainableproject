@@ -61,15 +61,17 @@ Start with an overall introduction, get going with the lab environment and the a
 **Lab environment**
 
 * Ensure that you have [all tools in your lab environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/lab-environment.md).
-* [Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md)
-* [Work in a Python virtual environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/python-venv.md)
+* Checkout "[Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md)" so you know you can work with it.
+* Learn how to "[Work in a Python virtual environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/python-venv.md)".
 
 **Assignment**
 
 * Start of A02 and a walkthough of the requirements.
+    * There is a [template you can use for the project](https://gitlab.com/mikael-roos/python-template).
 
+**Work**
 
-
+* Establish the project team and start working.
 
 
 ### Things to do on your own
