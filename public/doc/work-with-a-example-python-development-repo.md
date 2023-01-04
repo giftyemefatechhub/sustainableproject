@@ -1,3 +1,7 @@
+---
+revision:
+    "2022-01-04": "(A, mos) First version."
+---
 Work with an example Python development repo
 =========================
 

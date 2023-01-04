@@ -56,10 +56,11 @@ Start with an overall introduction, get going with the lab environment and the a
 
 * Slides on "[Introduction to testing and clean code](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/lecture/intro-testing-clean-code/README.md)" as an overall introduction to the concepts.
 
-* About object oriented programming with Python. Hmmm, is this already fixed?
+* About object oriented programming with Python. Hmmm, is this already fixed? Perhaps an OO example using slides?
 
 **Lab environment**
 
+* Ensure that you have [all tools in your lab environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/lab-environment.md).
 * [Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md)
 * [Work in a Python virtual environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/python-venv.md)
 
