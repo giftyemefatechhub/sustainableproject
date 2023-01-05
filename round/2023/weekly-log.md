@@ -16,6 +16,9 @@ TODO
 * Slide on python unittesting
 * Slide on clean code for part 3 summary
     * Check if sonarcloud is an option to work with
+    https://sonarcloud.io/project/overview?id=mosbth_python-template
+* Add video on Python OO, coding a dice/card game? 
+    * https://www.youtube.com/playlist?list=PLEtyhUSKTK3hOCnMrPKGOu3_VjUAkhsgG
 
 FIX
 
