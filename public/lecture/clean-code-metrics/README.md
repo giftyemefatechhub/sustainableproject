@@ -6,9 +6,9 @@ revision:
 Clean code, software metrics and philosophies with Python
 ====================
 
-This is an introduction to the concept of Clean code, Software Metrics and Software philosophies with focus on Python.
+This is an introduction to the concept of Clean code, Software Metrics and Software philosophies with a focus on Python.
 
-You can browse [the HTML slides used in the presentation](https://mikael-roos.gitlab.io/oopython/lecture/clean-code-metrics/slide.html) (press f/esc to enter/exit full screen mode and navigate using the arrows).
+You can browse [the HTML slides used in the presentation](https://mikael-roos.gitlab.io/oopython/lecture/clean-code-metrics/slide.html) (press f/esc to enter/exit full-screen mode and navigate using the arrows).
 
 <!--
 Recorded presentation, 44 minutes long (Swedish).

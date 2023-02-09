@@ -21,7 +21,7 @@ There are a lot of alternate development environments that likely will work for 
 Computer and operating system
 ------------------------
 
-You need a computer with an operating system like **Windows, MacOS or Linux**. Use the latest version to avoid troubles. Ensure that you are up to date.
+You need a computer with an operating system like **Windows, MacOS or Linux**. Use the latest version to avoid trouble. Ensure that you are up to date.
 
 
 
@@ -56,14 +56,14 @@ If you need assistance there is a video here.
 
 * [Use various bash terminals on Windows (Git Bash, Cygwin, Debian/WSL2)](https://www.youtube.com/watch?v=kialYZs6Oyc&list=PLEtyhUSKTK3gHj087mUjPfXyqMvSy2Rwz&index=2)
 
-**NOTE** You could also setup a development environment using the Windows terminals cmd and powershell (or using GUI tools). However, they have different syntax than a bash terminal and to make the it easy and straightforward it is expected that you are working with a bash terminal.
+**NOTE** You could also set up a development environment using the Windows terminals cmd and powershell (or using GUI tools). However, they have a different syntax than a bash terminal and to make the it easy and straightforward it is expected that you are working with a bash terminal.
 
 
 
 Python
 ------------------------
 
-Check you version of Python or download and install the [latest version of Python](https://www.python.org/downloads/).
+Check your version of Python or download and install the [latest version of Python](https://www.python.org/downloads/).
 
 You can check your current version like this. The `$` sign is the prompt and is not part of the command to write.
 

@@ -5,7 +5,7 @@ revision:
 Weekly log
 =====================
 
-This is the teachers notes on what might be important to do to get a nice journey through these parts of the course.
+This is the teacher's notes on what might be important to do to get a nice journey through these parts of the course.
 
 [[_TOC_]]
 
@@ -32,21 +32,21 @@ IMPROVE
 Precondition
 ---------------------
 
-You should have knowledge on Git and GitHub and you should have Git with GitBash installed on your environment.
+You should know Git and GitHub and you should have Git with GitBash installed on your environment.
 
-You should have knowledge on how to write a object oriented program with Python using classes.
+You should know how to write an object-oriented program with Python using classes.
 
 
 
-Overview of part 2 & part 3
+Overview of parts 2 & 3
 ---------------------
 
 "Part 2: Testing" is about testing and documentation of the code.
 
-* Work in teams of two and two and develop an application using object oriented Python.
+* Work in teams of two and two and develop an application using object-oriented Python.
     * Apply linters to enhance the code.
     * Use unit testing.
-* Oppose on other projects by reviewing them.
+* Oppose other projects by reviewing them.
 
 "Part 3: Clean Code" is about the concept of what makes clean and good code.
 
@@ -61,31 +61,37 @@ Prepare yourself through the following.
 
 1. [Work with Git](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-git.md). Review this article that provides an overview of Git commands and practice the commands on the terminal Git Bash. The article includes a [video playlist](https://www.youtube.com/playlist?list=PLEtyhUSKTK3iTFcdLANJq0TkKo246XAlv) that shows the basics.
 
-Using Git is optional in the assignment, but it is also highly recommended as a learning experience.
+Using Git is optional in the assignment, but it is also highly recommended as an important learning experience.
 
 
 
 Week 05 - Part 2 Testing
 ---------------------
 
-Start with an overall introduction, get going with the lab environment and the assignment.
+Start with an overall introduction and get going with the lab environment and the assignment.
 
 **Teacher activities**
 
 * Slides on "[Introduction to testing and clean code](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/lecture/intro-testing-clean-code/README.md)" as an overall introduction to the concepts.
 
-*_About object oriented programming with Python. Hmmm, is this already fixed? Perhaps an OO example using slides?_
-
+<!--
+*_About _object-oriented_ programming with_ Python. Hmmm, is this already fixed? Perhaps an OO example using slides?_
+-->
 
 **Lab environment & Exercises**
+
+* Work through the Canvas article "[Lab environment and tools](https://hkr.instructure.com/courses/5722/pages/lab-environment-and-tools?module_item_id=290310)" that helps you set up the lab environment.
+
+<!-- Using Canvas article instead of these 
 
 * Ensure that you have [all tools in your lab environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/lab-environment.md).
 * Learn how to "[Work in a Python virtual environment](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/python-venv.md)".
 * When you have installed all parts of the development environment, then you can try all tools out in the article/exercise "[Work with an example Python development repo](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/work-with-a-example-python-development-repo.md)".
+-->
 
 **Assignment**
 
-* Start of A02 and a walkthough of the requirements.
+* Start of [A02](A2.md) and a walkthrough of the requirements.
     * There is a [template you can use for the project](https://gitlab.com/mikael-roos/python-template).
 
 **Work**
@@ -101,15 +107,15 @@ How to add unit tests to your project.
 
 **Teacher activities**
 
-* Slides on "[Python Uunit tests and code coverage](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/lecture/unittesting-in-python/README.md)" as an overall introduction to the concepts.
+* Slides on "[Python Unit tests and code coverage](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/lecture/unittesting-in-python/README.md)" as an overall introduction to the concepts.
 
-* A walkthrough of the exercise "[Unit testing and code coverage in Python](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/unit-testing-and-code-coverage-in-python.md)" that will learn you the basics of unit testing and code coverage in Python.
+* A walkthrough of the exercise "[Unit testing and code coverage in [Python](https://gitlab.com/mikael-roos/oopython/-/blob/main/public/doc/unit-testing-and-code-coverage-in-python.md)" will learn you the basics of unit testing and code coverage in Python.
 
 * A discussion on [how to become a healthy team (part 2)](../../public/doc/hints-for-a-healthy-team-part-2.md).
 
 **Lectures**
 
-During this week you shall review the pre recorded lectures that also have reading instructions.
+During this week you shall review the pre-recorded lectures that also have reading instructions.
 
 * Lecture 6 - Introduction to Software Testing
 * Lecture 7 - Software Unit Testing
@@ -123,7 +129,7 @@ During this week you shall review the pre recorded lectures that also have readi
 Week 07 - TDD and Documentation
 ---------------------
 
-Final week of part 2, discuss TDD and generate documentation.
+The final week of part 2, discuss TDD and generate documentation.
 
 **Teacher activities**
 
@@ -134,14 +140,14 @@ The session in class will focus on discussing and solving the following exercise
 
 **Lectures**
 
-During this week you shall review the pre recorded lectures that also have reading instructions.
+During this week you shall review the pre-recorded lectures that also have reading instructions.
 
 * Lecture 8 - Test-driven development
 * Lecture 9 - Software Documentation
 
 **Work**
 
-* Generate documentation for you A02.
+* Generate documentation for your A02.
 * Prepare to submit A02 next week.
 
 
@@ -149,7 +155,7 @@ During this week you shall review the pre recorded lectures that also have readi
 Week 08 - Part 3 Clean code
 ---------------------
 
-Lets review the concept of good and clean code.
+Let's review the concept of good and clean code.
 
 **Teacher activities**
 
