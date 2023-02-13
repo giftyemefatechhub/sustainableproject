@@ -129,7 +129,7 @@ During this week you shall review the pre-recorded lectures that also have readi
 Week 07 - TDD and Documentation
 ---------------------
 
-The final week of part 2, discuss TDD and generate documentation.
+Discuss TDD and generate documentation and prepare to submit A2 next week.
 
 **Teacher activities**
 
@@ -160,7 +160,7 @@ Let's review the concept of good and clean code.
 **Teacher activities**
 
 * The lecture "[Clean code, metrics and philosophies with Python](../../public/lecture/clean-code-metrics/README.md)" is an introduction to this part of the course.
-* The Assignment 3 "Sustainable programming through good and clean code" will be presented together with guidelines on how to structure the report.
+* Assignment 3 "Sustainable programming through good and clean code" will be presented together with guidelines on how to structure the report.
 
 The session in class will focus on the following exercises:
 
@@ -168,15 +168,15 @@ The session in class will focus on the following exercises:
 
 **Lectures**
 
-During this week you shall review the pre recored lectures that also have reading instructions.
+During this week you shall review the pre recorded lectures that also have reading instructions.
 
-* Lecture 11 - Static code analysing and metrics
+* Lecture 11 - Static code analyzing and metrics
 
 **Work**
 
 * Run metrics on your A02 code, anything to fix before submission?
 * Deadline to submit A02.
-* Start working on report for A03.
+* Start working on the report for A03.
 
 
 
