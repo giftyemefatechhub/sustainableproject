@@ -209,7 +209,7 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 * Check your code for error
 * Find troublesome code
 * Enforce best practice
-* Community guidelines on what best pracise is
+* Community guidelines on best practise
 
 </script>
 
@@ -222,7 +222,7 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 * Analyse and measure the code
 * Find troublesome code
 * Enforce best practice
-* Community guidelines on what best pracise is
+* Community guidelines on best practise
 * Get a "grade" on your code quality
 
 </script>
@@ -244,9 +244,10 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 <script data-role="slide" data-markdown type="text/html">
 # Unit testing
 
-* Test all parts of your code
 * Write code that executes your code
 * Assert that the correct thing happened
+* Test all parts of your code
+    * Troublesome parts even more
 * Measure code coverage
     * How many lines are covered by unit tests
 
@@ -259,7 +260,7 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 
 <figure>
 <img src="img/code-coverage-compare.png" width="80%">
-<figcaption>Code coverage from different projects.<br>Which project is yours?<br>Does it hint something about software quality?</figcaption>
+<figcaption>Code coverage from different projects.<br>Does it hint something about software quality?</figcaption>
 </figure>
 
 </script>
@@ -272,6 +273,7 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 * Document your project
     * README.md
     * RELEASES.md
+    * CONTRIBUTION.md
 * UML diagrams
     * Class, package diagrams
 * Automate generation of documentation from the comments in the code
@@ -294,6 +296,7 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 * Install all tools locally into the repo
 * No need to pollute your local system
 * Dependencies in `requirement.txt`
+* Development/production environemnt controller in repo
 
 </script>
 
@@ -302,7 +305,9 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 <script data-role="slide" data-markdown type="text/html">
 # Project structure
 
-* How to organise the code into directories?
+* How to organise the code into directories
+* Prepare to work with modules and unit test
+* Community best practice
 * Template exists
 
 <p class="footnote">https://gitlab.com/mikael-roos/python-template</p>
@@ -314,6 +319,7 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 <script data-role="slide" data-markdown type="text/html">
 # Linters
 
+* Statical code analysis and mess detection
 * flake8
 * pylint
 
@@ -322,7 +328,7 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 
 
 <script data-role="slide" data-markdown type="text/html">
-# Testing
+# Unit test
 
 * unittest
 * coverage
@@ -359,6 +365,8 @@ Zen of Python, DRY, KISS, POGE, YAGNI, 80-20 (Pareto), Copy & paste programming,
 * pdoc
 * pyreverse
 
+<p class="footnote">Is there a difference in analysis & design versus documentation?</p>
+
 </script>
 
 
@@ -380,6 +388,8 @@ def guess(self, a_number):
     if not self.low_number <= a_number <= self.high_number:
         raise ValueError("The number is higher/lower than max/min value.")
 ```
+
+<p class="footnote">Document code and prepare to generate documentation.</p>
 
 </script>
 
