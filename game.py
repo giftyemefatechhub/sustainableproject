@@ -7,7 +7,7 @@ from player import Player
 class Game:
     def __init__(self):
         self.computer = Computer("Computer")
-        self.player = Player("Player")
+        self.player = Player(input("Enter player name:"))
     
     def choose_player(self):
         rng = randint(1, 10)
@@ -20,10 +20,10 @@ class Game:
                 print("Computer wins!")
                 return
             else:
-                print("You win!")
+                print(f"{self.player} win!")
                 return
         else:
-            print("Player goes first.")
+            print(f"{self.player} goes first.")
             while self.computer.computerScore < 100 and self.player.playerScore < 100:
                 self.player.round()
                 self.computer.round()
@@ -31,7 +31,7 @@ class Game:
                 print("Computer wins!")
                 return
             else:
-                print("You win!")
+                print(f"{self.player} win!")
                 return
 
 game = Game()
