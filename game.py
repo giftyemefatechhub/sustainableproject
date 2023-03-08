@@ -35,4 +35,4 @@ class Game:
                 return
 
 game = Game()
-game.choose_player
+game.choose_player()
