@@ -1,12 +1,12 @@
 import unittest
 from random import randint 
 from unittest.mock import patch
-from die import Die
+from dice import Dice
 
 class TestDie(unittest.TestCase):
     @patch('die.randint', return_value=6)
     def test_die(self, mock_randint):
-        die = Die()
+        die = Dice()
         self.assertEqual(str(die),"6")
 
 #from random import randint
