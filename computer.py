@@ -1,5 +1,5 @@
 from random import random, randint
-from die import Die
+from dice import Dice
 
 
 class Computer:
@@ -13,20 +13,23 @@ class Computer:
     
     def round(self):
         if self.roundScore < 20:
-            roll = Die().value
-            print("Computer rolls ", roll)
+            roll = Dice().value
+            print(f"Computer rolls {roll}")
             if roll != 1:
-                self.round_score += roll
-                print("Round score is ", self.roundScore)
+                self.roundScore += roll
                 self.round()
                 self.roundScore = 0
             else:
-                print("You pigged it!")
+                print("Computer rolled 1 and pigged this round!")
                 self.roundScore = 0
+                print(f"Computer scored {self.roundScore} for this round")
                 self.computerScore += self.roundScore
-                print("Computer's total score is ", self.computerScore)
+                print(f"Computer's total score: {self.computerScore}")
+                print("Player's turn")
         else:
             print("Computer holds")
+            print(f"Computer scored {self.roundScore} for this round")
             self.computerScore += self.roundScore
-            print("Computer's total score is", self.computerScore)
+            print(f"Computer's total: {self.computerScore}")
             self.roundScore = 0
+            print(f"Player's turn")
