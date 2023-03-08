@@ -1,5 +1,5 @@
 from random import randint
-from die import Die
+from dice import Dice
 
 
 class Player:
@@ -12,20 +12,21 @@ class Player:
         return f"{self.name}"
     
     def round(self):
-        choice = "roll"
+        choice = input("Type (r) to roll: ")
         while choice != "h":
-            choice = input("Do you want to roll (r) or hold (h)? ")
             if choice == "h":
-                print("Your score for this round is ", self.roundScore)
                 break
-            roll = Die().value
-            print("You rolled", roll)
+            roll = Dice().value
+            print(f"{self.name} rolled {roll}")
             if roll != 1:
                 self.roundScore += roll
+                choice = input("Would you like to roll again (r) or hold (h)? ")
             else:
-                print("You pigged it!")
+                print(f"{self.name} rolled a 1 and pigged this round!")
                 self.roundScore = 0
                 break
+        print(f"{self.name}'s scored {self.roundScore} for this round")
         self.playerScore += self.roundScore
-        print("Your total score is ", self.playerScore)
+        print(f"{self.name}'s total score: {self.playerScore}")
         self.roundScore = 0
+        print("Computer's turn")
