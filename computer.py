@@ -1,4 +1,3 @@
-from random import random, randint
 from dice import Dice
 
 
@@ -25,11 +24,9 @@ class Computer:
                 print(f"Computer scored {self.roundScore} for this round")
                 self.computerScore += self.roundScore
                 print(f"Computer's total score: {self.computerScore}")
-                print("Player's turn")
         else:
             print("Computer holds")
             print(f"Computer scored {self.roundScore} for this round")
             self.computerScore += self.roundScore
             print(f"Computer's total: {self.computerScore}")
             self.roundScore = 0
-            print(f"Player's turn")
