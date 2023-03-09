@@ -1,27 +1,21 @@
 from random import randint
 from intelligence import Intelligent
 from player import Player
-from highscore import HighScore
 
 
 class Game:
     def __init__(self, number_of_players):
-        self.score = 0
-        self.number_games_played = 0
-        self.number_games_won = 0
-        self.high_score = HighScore()
-
         if number_of_players == 1:
             self.computer = Intelligent("Computer")
             self.player = Player(input("Enter player name: "))
         elif number_of_players == 2:
             self.player1 = Player(input(f"Enter name of player 1: "))
-            self.player2 = Player(input(f"Enter name of player 1: "))
+            self.player2 = Player(input(f"Enter name of player 2: "))
             first_to_play = randint(1, 10)
             rounds = 1
             if first_to_play <= 5:
                 print(f"{self.player1} goes first")
-                print(" ")
+                print("\n")
                 while self.player1.playerScore < 100 and self.player2.playerScore < 100:
                     print(f"ROUND {rounds}:")
                     print("-------")
@@ -36,15 +30,10 @@ class Game:
                 
                 if self.player1.playerScore >= 100:
                     print(f"{self.player1} wins!")
-                    self.number_games_won += 1
-                    if self.player1.playerScore > self.high_score:
-                        self.high_score = self.player1.playerScore
                     return
                 else:
                     print(f"{self.player2} win!")
-                    if self.player2.playerScore > self.high_score:
-                        self.high_score = self.player2.playerScore
-                self.number_games_played += 1
+                    return
             else:
                 print(f"{self.player2} goes first.")
                 print("\n")
@@ -61,14 +50,10 @@ class Game:
                     rounds += 1
                 if self.player2.playerScore >= 100:
                     print(f"{self.player2} wins!")
-                    if self.player2.playerScore > self.high_score:
-                        self.high_score = self.player2.playerScore
                     return
                 else:
                     print(f"{self.player1} win!")
-                    if self.player1.playerScore > self.high_score:
-                        self.high_score = self.player1.playerScore
-                self.number_games_played += 1
+                    return
         else:
             raise ValueError("Invalid number of players. Game can be played by 1 or 2 players. Try again!")
     
@@ -94,10 +79,6 @@ class Game:
                 return
             else:
                 print(f"{self.player} win!")
-                self.number_games_played += 1
-                if self.player.playerScore > self.high_score:
-                        self.high_score = self.player.playerScore
-                self.high_score.show_stats()
                 return
         else:
             print(f"{self.player} goes first.")
@@ -117,13 +98,8 @@ class Game:
                 print("Computer wins!")
                 return
             else:
-                print(f"{self.player} wins!")
-                self.number_games_played += 1
-                if self.player.playerScore > self.high_score:
-                        self.high_score = self.player.playerScore
-                self.high_score.show_stats()
+                print(f"{self.player} win!")
                 return
-
 
 game = Game(int(input("Enter number of players (1) or (2): ")))
 game.choose_player()
