@@ -1,13 +1,13 @@
 from random import randint
-from computer import Computer
+from intelligence import Intelligent
 from player import Player
 
 
 class Game:
     def __init__(self, number_of_players):
         if number_of_players == 1:
-            self.computer = Computer("Computer")
-            self.player = Player(input("Enter player name:"))
+            self.computer = Intelligent("Computer")
+            self.player = Player(input("Enter player name: "))
         elif number_of_players == 2:
             self.player1 = Player(input(f"Enter name of player 1: "))
             self.player2 = Player(input(f"Enter name of player 1: "))
@@ -56,7 +56,6 @@ class Game:
                     return
         else:
             raise ValueError("Invalid number of players. Game can be played by 1 or 2 players. Try again!")
-
     
     def choose_player(self):
         first_to_play = randint(1, 10)
@@ -99,7 +98,7 @@ class Game:
                 print("Computer wins!")
                 return
             else:
-                print(f"{self.player} win!")
+                print(f"{self.player} wins!")
                 return
 
 game = Game(int(input("Enter number of players (1) or (2): ")))
