@@ -1,7 +1,7 @@
 import unittest
 from io import StringIO
 from unittest.mock import patch
-from player import Player
+from guess.player import Player
 
 
 class TestPlayer(unittest.TestCase):
@@ -22,26 +22,26 @@ class TestPlayer(unittest.TestCase):
 
     def test_init(self):
         self.assertEqual(self.player.name, "Mary")
-        self.assertEqual(self.player.playerScore, 0)
-        self.assertEqual(self.player.roundScore, 0)
+        self.assertEqual(self.player.player_score, 0)
+        self.assertEqual(self.player.round_score, 0)
 
     def test_hold(self):
         self.set_input(["roll", "hold"])
         self.player.round()
-        self.assertEqual(self.player.roundScore, 0)
-        self.assertGreater(self.player.playerScore, 0)
+        self.assertEqual(self.player.round_score, 0)
+        self.assertGreater(self.player.player_score, 0)
 
     def test_roll(self):
         self.set_input(["roll", "2", "roll", "1", "hold"])
         self.player.round()
-        self.assertGreaterEqual(self.player.roundScore, 0)
-        self.assertGreaterEqual(self.player.playerScore, 0)
+        self.assertGreaterEqual(self.player.round_score, 0)
+        self.assertGreaterEqual(self.player.player_score, 0)
 
     def test_round(self):
         self.set_input(["roll", "roll", "1"])
         self.player.round()
-        self.assertEqual(self.player.playerScore, 0)
-        self.assertEqual(self.player.roundScore, 0)
+        self.assertEqual(self.player.player_score, 0)
+        self.assertEqual(self.player.round_score, 0)
         
 #from random import randint
 #from die import Die
