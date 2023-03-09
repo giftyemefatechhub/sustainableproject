@@ -12,11 +12,21 @@ class Game:
             self.player1 = Player(input(f"Enter name of player 1: "))
             self.player2 = Player(input(f"Enter name of player 1: "))
             first_to_play = randint(1, 10)
+            rounds = 1
             if first_to_play <= 5:
-                print(f"({self.player1} goes first)")
+                print(f"{self.player1} goes first")
+                print("\n")
                 while self.player1.playerScore < 100 and self.player2.playerScore < 100:
+                    print(f"ROUND {rounds}:")
+                    print("-------")
+                    if rounds >= 2:
+                        print(f"{self.player1}'s turn")
                     self.player1.round()
+                    if rounds >= 1:
+                        print(f"{self.player2}'s turn")
                     self.player2.round()
+                    print(".......................................................")
+                    rounds += 1
                 
                 if self.player1.playerScore >= 100:
                     print(f"{self.player1} wins!")
@@ -26,9 +36,18 @@ class Game:
                     return
             else:
                 print(f"{self.player2} goes first.")
+                print("\n")
                 while self.player1.playerScore < 100 and self.player2.playerScore < 100:
+                    print(f"ROUND {rounds}:")
+                    print("-------")
+                    if rounds >= 2:
+                        print(f"{self.player2}'s turn")
                     self.player2.round()
+                    if rounds >= 1:
+                        print(f"{self.player1}'s turn")
                     self.player1.round()
+                    print(".......................................................")
+                    rounds += 1
                 if self.player2.playerScore >= 100:
                     print(f"{self.player2} wins!")
                     return
@@ -44,15 +63,17 @@ class Game:
         rounds = 1
         if first_to_play <= 5:
             print("Computer goes first")
+            print("\n")
             while self.computer.computerScore < 100 and self.player.playerScore < 100:
-                print(f"ROUND {rounds}")
-                print("---------------")
+                print(f"ROUND {rounds}:")
+                print("-------")
                 if rounds >= 2:
                     print("Computer's turn")
                 self.computer.round()
                 if rounds >= 1:
                     print("Player's turn")
                 self.player.round()
+                print(".......................................................")
                 rounds += 1
             if self.computer.computerScore >= 100:
                 print("Computer wins!")
@@ -61,17 +82,18 @@ class Game:
                 print(f"{self.player} win!")
                 return
         else:
-            rounds = 1
             print(f"{self.player} goes first.")
+            print("\n")
             while self.computer.computerScore < 100 and self.player.playerScore < 100:
-                print(f"ROUND {rounds}")
-                print("---------------")
+                print(f"ROUND {rounds}:")
+                print("-------")
                 if rounds >= 2:
                     print(f"Player's turn")
                 self.player.round()
                 if rounds >= 1:
                     print(f"Computer's turn")
                 self.computer.round()
+                print(".......................................................")
                 rounds += 1
             if self.computer.computerScore >= 100:
                 print("Computer wins!")
