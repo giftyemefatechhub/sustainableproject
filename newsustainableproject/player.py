@@ -2,36 +2,33 @@ from random import randint
 from die import Die
 
 
-class Player:  
+class Player:
     """
-    A class representing the player of the game
+    A class representing the player of the game.
 
      Attributes:
     - name: a string representing the player's name.
     - round_score: an integer representing the player's score for the current round.
     - player_score: an integer representing the player's total score.
     """
+
     def __init__(self, name):
         """
-        Initializes player object with name and scores.
-        
+        Initialize a player object with a name and scores.
+
         Args:
         - name: a string representing the player's name.
         """
         self.name = name
         self.round_score = 0
         self.player_score = 0
-    
+
     def __str__(self):
-        """
-        Returns player object as a string.
-        """
+        """Return a player object as a string."""
         return f"{self.name}"
-    
+
     def round(self):
-        """
-        Goes through a round, the player rolls or hold the dice. Score updates
-        """
+        """Goes through a round, player rolls or hold the dice. Score updates."""
         choice = "roll"
         while choice != "hold":
             choice = input("Do you want to roll or hold?")
