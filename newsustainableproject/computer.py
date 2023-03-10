@@ -2,7 +2,6 @@ from random import random, randint
 from die import Die
 
 
-
 class Computer:
     """Represents a computer player in a game of Pig.
 
@@ -13,7 +12,7 @@ class Computer:
     """
 
     def __init__(self, name):
-        """Initializes a new instance of the Computer class.
+        """Initialize a new instance of the Computer class.
 
         Args:
             name (str): The name of the computer player.
@@ -23,13 +22,18 @@ class Computer:
         self.comp_score = 0
 
     def __str__(self):
-        """Returns a string representation of the computer player."""
+        """Return a string representation of the computer player."""
         return f"{self.name}"
 
     def round(self):
-        """Executes a round of play for the computer player.
-        The computer player will roll the die and accumulate points until either a 1 is rolled or the round score reaches 20. If a 1 is rolled, the round score is reset to 0 and the turn ends. Otherwise, the round score is accumulated and the computer player rolls again. If the round score reaches 20, the computer player will hold and the accumulated points will be added to
-        the total score for the player. Does not return anything.
+        """Execute a round of play for the computer player.
+
+        The computer rolls the die until a 1 is rolled or the score reaches 20.
+        If a 1 is rolled, the round score is reset to 0 and the turn ends.
+        Otherwise, the round score is totaled and the computer rolls.
+        If the round score reaches 20, the computer player will hold and
+        Accumulated points will be added to the total score for the player.
+        Does not return anything.
         """
         if self.round_score < 20:
             roll = Die().value
