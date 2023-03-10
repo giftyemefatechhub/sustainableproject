@@ -8,7 +8,7 @@ class Player:
 
      Attributes:
     - name: a string representing the player's name.
-    - round_score: an integer representing the player's score for the current round.
+    - round_score: an integer representing the player's current score.
     - player_score: an integer representing the player's total score.
     """
 
