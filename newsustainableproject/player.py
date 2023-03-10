@@ -13,9 +13,7 @@ class Player:
     """
 
     def __init__(self, name):
-        """
-        Initialize a player object with a name and scores.
-        """
+        """Initialize a player object with a name and scores."""
         self.name = name
         self.round_score = 0
         self.player_score = 0
