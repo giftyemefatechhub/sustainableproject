@@ -15,9 +15,6 @@ class Player:
     def __init__(self, name):
         """
         Initialize a player object with a name and scores.
-
-        Args:
-        - name: a string representing the player's name.
         """
         self.name = name
         self.round_score = 0
@@ -28,7 +25,7 @@ class Player:
         return f"{self.name}"
 
     def round(self):
-        """Goes through a round, player rolls or hold the dice. Score updates."""
+        """Round of pig, player rolls or hold the dice. Score updates."""
         choice = "roll"
         while choice != "hold":
             choice = input("Do you want to roll or hold?")
