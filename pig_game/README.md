@@ -1,2 +1,0 @@
-# sustainableproject
-School work
