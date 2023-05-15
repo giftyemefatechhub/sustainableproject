@@ -36,5 +36,18 @@ player.py: Contains the Player class representing a player in the game.
 Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please create a new issue or submit a pull request.
 
+
+# How to test the Game
+
+First, you need to install pytest. You can do this using pip, the Python package manager:
+pip install pytest
+
+Run the pytest command in the same directory:
+pytest
+
+You can also use various command-line options to customize the test run, such as -v to display verbose output or --cov to generate code coverage reports.
+
+
+
 # License
 This project is licensed under the MIT License. See the LICENSE file for details.
