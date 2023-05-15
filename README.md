@@ -10,8 +10,8 @@ This repository contains the implementation of the Pig Dice Game in Python. The 
 
 1. Clone the repository:
 
-```shell
-git clone https://github.com/your-username/pig-dice-game.git
+```shell[
+git clone https://github.com/giftyemefatechhub/sustainableproject/tree/main
 
 ## Navigate to the project directory:
 cd pig-dice-game
