@@ -37,7 +37,7 @@ Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please create a new issue or submit a pull request.
 
 
-# How to test the Game
+## How to test the Game
 
 First, you need to install pytest. You can do this using pip, the Python package manager:
 pip install pytest
